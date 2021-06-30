@@ -20,11 +20,19 @@ import UpdatingLifecycleFirst from './Components/UpdatingLifecycleFirst'
 import UpdatingLifecycleSecond from './Components/UpdatingLifecycleSecond'
 import UpdatingLifecycleThird from './Components/UpdatingLifecycleThird'
 import UnmountingLifecycleFirst from './Components/UnmountingLifecycleFirst'
+import PureParentComponent from './Components/PureParentComponent'
+import MemoComp from './Components/MemoComp'
+
+
+// pureconponent is class base components
+// memo component is function base components
 
 const carinfo = { name: "Ford", model: "Mustang" }
 ReactDOM.render(
   < React.StrictMode >
-    <UnmountingLifecycleFirst />
+    <MemoComp />
+    {/* <PureParentComponent /> */}
+    {/* <UnmountingLifecycleFirst /> */}
     {/* <UpdatingLifecycleThird /> */}
     {/* <UpdatingLifecycleSecond /> */}
     {/* <UpdatingLifecycleFirst /> */}
