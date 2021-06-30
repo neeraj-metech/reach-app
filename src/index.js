@@ -14,11 +14,23 @@ import './mystylesheet.css'
 import Styles from './myStylesheet.module.css'
 import HtmlElement from './Components/HtmlElement'
 import Fragment from './Components/Fragment'
-// import Style from 
-const carinfo = { name: "Ford", model: "Mustang" };
+import MountingLifecycleFirst from './Components/MountingLifecycleFirst'
+import MountingLifecycleSecond from './Components/MountingLifecycleSecond'
+import UpdatingLifecycleFirst from './Components/UpdatingLifecycleFirst'
+import UpdatingLifecycleSecond from './Components/UpdatingLifecycleSecond'
+import UpdatingLifecycleThird from './Components/UpdatingLifecycleThird'
+import UnmountingLifecycleFirst from './Components/UnmountingLifecycleFirst'
+
+const carinfo = { name: "Ford", model: "Mustang" }
 ReactDOM.render(
   < React.StrictMode >
-    <Fragment />
+    <UnmountingLifecycleFirst />
+    {/* <UpdatingLifecycleThird /> */}
+    {/* <UpdatingLifecycleSecond /> */}
+    {/* <UpdatingLifecycleFirst /> */}
+    {/* <MountingLifecycleSecond favcol='Green' /> */}
+    {/* <MountingLifecycleFirst favcol='Green' /> */}
+    {/* <Fragment /> */}
     {/* <HtmlElement /> */}
     {/* <Stylesheet styleName = {true}/> */}
     {/* <h1 className={Styles.success}>Success</h1> */}
