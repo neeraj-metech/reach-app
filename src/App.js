@@ -23,16 +23,28 @@ import MemoComp from './Components/MemoComp'
 import FromRef from './Components/FromRef'
 import FromRefInputParent from './Components/FromRefInputParent'
 import PortalsRoot from './Components/PortalsRoot'
-
-
-// pureconponent is class base components
-// memo component is function base components
+import ErrorBoundry from './Components/ErrorBoundry'
+import ErrorBoundryChild from './Components/ErrorBoundryChild'
+import ClickCounter from './Components/Hoc/ClickCounter'
+import HoverCounter from './Components/Hoc/HoverCounter'
 
 function App() {
   const carinfo = { name: "Ford", model: "Mustang" }
   return (
     <div className="App">
-      <PortalsRoot />
+      <ClickCounter name="Neeraj" />
+      <HoverCounter name="Neeraj" />
+      {/* <ErrorBoundry>
+        <ErrorBoundryChild hero='superman' />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <ErrorBoundryChild hero='spiderman' />
+      </ErrorBoundry>
+      <ErrorBoundry>
+        <ErrorBoundryChild hero='jocker' />
+      </ErrorBoundry> */}
+
+      {/*<PortalsRoot />*}
       {/* <FromRefInputParent /> */}
       {/* <FromRef /> */}
       {/* <MemoComp /> */}
