@@ -33,14 +33,23 @@ import HoverCount from './Components/RenderProps/HoverCount'
 import Counter from './Components/RenderProps/Counter'
 import { UserProvider } from './Components/Context/Context'
 import ContextA from './Components/Context/ContextA'
+import GetDataApi from './Components/axiosApi/GetDataApi'
+import GetDataApi2 from './Components/axiosApi/GetDataApi2'
+import PostDataApi from './Components/axiosApi/PostDataApi'
 
 function App() {
   const carinfo = { name: "Ford", model: "Mustang" }
   return (
     <div className="App">
-      <UserProvider value={carinfo}>
+
+      <PostDataApi />
+
+      {/* <GetDataApi2 />
+      <GetDataApi /> */}
+
+      {/* <UserProvider value={carinfo}>
         <ContextA />
-      </UserProvider>
+      </UserProvider> */}
 
       {/* <Counter increBy={5} render={(count, incrementCount) => <ClickCount count={count} incrementCount={incrementCount} />} />
       <Counter increBy={10} render={(count, incrementCount, test) => <HoverCount test={test} count={count} incrementCount={incrementCount} />} />
