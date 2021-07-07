@@ -27,22 +27,43 @@ import Styles from './myStylesheet.module.css'
 // import ErrorBoundryChild from './Components/ErrorBoundary/ErrorBoundryChild'
 // import ClickCounter from './Components/Hoc/ClickCounter'
 // import HoverCounter from './Components/Hoc/HoverCounter'
-import User from './Components/RenderProps/User'
-import ClickCount from './Components/RenderProps/ClickCount'
-import HoverCount from './Components/RenderProps/HoverCount'
-import Counter from './Components/RenderProps/Counter'
-import { UserProvider } from './Components/Context/Context'
-import ContextA from './Components/Context/ContextA'
-import GetDataApi from './Components/axiosApi/GetDataApi'
-import GetDataApi2 from './Components/axiosApi/GetDataApi2'
-import PostDataApi from './Components/axiosApi/PostDataApi'
+// import User from './Components/RenderProps/User'
+// import ClickCount from './Components/RenderProps/ClickCount'
+// import HoverCount from './Components/RenderProps/HoverCount'
+// import Counter from './Components/RenderProps/Counter'
+// import { UserProvider } from './Components/Context/Context'
+// import ContextA from './Components/Context/ContextA'
+// import GetDataApi from './Components/axiosApi/GetDataApi'
+// import GetDataApi2 from './Components/axiosApi/GetDataApi2'
+// import PostDataApi from './Components/axiosApi/PostDataApi'
+// import HookCounter from './HooksProp/UseStateHook/HookCounter'
+// import HookCounter2 from './HooksProp/UseStateHook/HookCounter2'
+// import UseStateObjet from './HooksProp/UseStateHook/UseStateObjet'
+// import UseStateArray from './HooksProp/UseStateHook/UseStateArray'
+// import UseEffectHookFirst from './HooksProp/UseEffectHook/UseEffectHookFirst'
+import RunEffectOnce from './HooksProp/UseEffectHook/RunEffectOnce'
+import UseEffectCleanup from './HooksProp/UseEffectHook/UseEffectCleanup'
+import UseEffectGetData from './HooksProp/UseEffectHook/UseEffectGetData'
+import UseEffectGetData2 from './HooksProp/UseEffectHook/UseEffectGetData2'
 
 function App() {
   const carinfo = { name: "Ford", model: "Mustang" }
   return (
     <div className="App">
 
-      <PostDataApi />
+      <UseEffectGetData2 />
+      {/* <UseEffectGetData /> */}
+      {/* <UseEffectCleanup /> */}
+      {/* <RunEffectOnce /> */}
+      {/* <UseEffectHookFirst /> */}
+
+      {/* <UseStateArray /> */}
+      {/* <UseStateObjet /> */}
+      {/* <HookCounter2 /> */}
+      {/* <HookCounter /> */}
+
+
+      {/* <PostDataApi /> */}
 
       {/* <GetDataApi2 />
       <GetDataApi /> */}
