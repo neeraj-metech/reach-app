@@ -21,7 +21,7 @@ function UseEffectGetData2() {
     return (
         <React.Fragment>
             <h1>Get Data From useEffect</h1>
-            <input type="text" value={postId} onChange={(e) => setPostId(e.target.value)} />
+            <input type="text" placeholder="Enter ID ex:- 1,2,3,4,.." value={postId} onChange={(e) => setPostId(e.target.value)} />
             <button onClick={getPost} >Send</button>
             <p>{posts.title}</p>
         </React.Fragment>

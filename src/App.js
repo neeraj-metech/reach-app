@@ -41,21 +41,41 @@ import Styles from './myStylesheet.module.css'
 // import UseStateObjet from './HooksProp/UseStateHook/UseStateObjet'
 // import UseStateArray from './HooksProp/UseStateHook/UseStateArray'
 // import UseEffectHookFirst from './HooksProp/UseEffectHook/UseEffectHookFirst'
-import RunEffectOnce from './HooksProp/UseEffectHook/RunEffectOnce'
-import UseEffectCleanup from './HooksProp/UseEffectHook/UseEffectCleanup'
-import UseEffectGetData from './HooksProp/UseEffectHook/UseEffectGetData'
-import UseEffectGetData2 from './HooksProp/UseEffectHook/UseEffectGetData2'
+
+// import RunEffectOnce from './HooksProp/UseEffectHook/RunEffectOnce'
+// import UseEffectCleanup from './HooksProp/UseEffectHook/UseEffectCleanup'
+// import UseEffectGetData from './HooksProp/UseEffectHook/UseEffectGetData'
+// import UseEffectGetData2 from './HooksProp/UseEffectHook/UseEffectGetData2'
+
+// import ContextComponentA from './HooksProp/UseContextHook/ContextComponentA'
+
+import SimpleReducer from './HooksProp/UseReducerHook/SimpleReducer'
+import ComplexReducer from './HooksProp/UseReducerHook/ComplexReducer'
+import MultiReducer from './HooksProp/UseReducerHook/MultiReducer'
+import UseReducerWithUseContext from './HooksProp/UseReducerHook/UseReducerWithUseContext'
+import GetDataReducer from './HooksProp/UseReducerHook/GetDataReducer'
 
 function App() {
   const carinfo = { name: "Ford", model: "Mustang" }
   return (
     <div className="App">
 
-      <UseEffectGetData2 />
+      <GetDataReducer />
+      {/* <UseReducerWithUseContext /> */}
+      {/* <MultiReducer /> */}
+      {/* <ComplexReducer /> */}
+      {/* <SimpleReducer /> */}
+
+
+      {/* <ContextComponentA /> */}
+
+
+      {/* <UseEffectGetData2 /> */}
       {/* <UseEffectGetData /> */}
       {/* <UseEffectCleanup /> */}
       {/* <RunEffectOnce /> */}
       {/* <UseEffectHookFirst /> */}
+
 
       {/* <UseStateArray /> */}
       {/* <UseStateObjet /> */}
