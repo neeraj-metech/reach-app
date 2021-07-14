@@ -49,18 +49,26 @@ import Styles from './myStylesheet.module.css'
 
 // import ContextComponentA from './HooksProp/UseContextHook/ContextComponentA'
 
-import SimpleReducer from './HooksProp/UseReducerHook/SimpleReducer'
-import ComplexReducer from './HooksProp/UseReducerHook/ComplexReducer'
-import MultiReducer from './HooksProp/UseReducerHook/MultiReducer'
-import UseReducerWithUseContext from './HooksProp/UseReducerHook/UseReducerWithUseContext'
-import GetDataReducer from './HooksProp/UseReducerHook/GetDataReducer'
+// import SimpleReducer from './HooksProp/UseReducerHook/SimpleReducer'
+// import ComplexReducer from './HooksProp/UseReducerHook/ComplexReducer'
+// import MultiReducer from './HooksProp/UseReducerHook/MultiReducer'
+// import UseReducerWithUseContext from './HooksProp/UseReducerHook/UseReducerWithUseContext'
+// import GetDataReducer from './HooksProp/UseReducerHook/GetDataReducer'
+
+// import UseCallBackHook from './HooksProp/useCallBackHook/UseCallBackHook'
+
+import UseMemoHook from './HooksProp/useMemoHook/UseMemoHook'
 
 function App() {
   const carinfo = { name: "Ford", model: "Mustang" }
   return (
     <div className="App">
 
-      <GetDataReducer />
+      <UseMemoHook />
+
+      {/* <UseCallBackHook /> */}
+
+      {/* <GetDataReducer /> */}
       {/* <UseReducerWithUseContext /> */}
       {/* <MultiReducer /> */}
       {/* <ComplexReducer /> */}
