@@ -57,14 +57,22 @@ import Styles from './myStylesheet.module.css'
 
 // import UseCallBackHook from './HooksProp/useCallBackHook/UseCallBackHook'
 
-import UseMemoHook from './HooksProp/useMemoHook/UseMemoHook'
+//import UseMemoHook from './HooksProp/useMemoHook/UseMemoHook'
+
+import BasicRoute from './routing/basicRouting/BasicRoute'
+import UrlParameter from './routing/basicRouting/UrlParameter'
+import RedirectAuth from './routing/basicRouting/RedirectAuth'
 
 function App() {
   const carinfo = { name: "Ford", model: "Mustang" }
   return (
     <div className="App">
 
-      <UseMemoHook />
+      <RedirectAuth />
+      {/* <UrlParameter /> */}
+      {/* <BasicRoute /> */}
+
+      {/* <UseMemoHook /> */}
 
       {/* <UseCallBackHook /> */}
 
